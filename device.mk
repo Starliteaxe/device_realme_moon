@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     GoogleCameraGo
+	
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-even
 
 # fastbootd
 PRODUCT_PACKAGES += \
