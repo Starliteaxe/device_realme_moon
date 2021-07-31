@@ -1047,7 +1047,7 @@ service osi /system/bin/osi
 	
 # DT2W
 on property:persist.sys.even.dt2w=0
-    exec -- /vendor/bin/dt2w_event 4
+    exec - system input -- /vendor/bin/dt2w_event 4
 
 on property:persist.sys.even.dt2w=1
-    exec -- /vendor/bin/dt2w_event 5
+    exec - system input -- /vendor/bin/dt2w_event 5
