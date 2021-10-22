@@ -67,6 +67,7 @@ PRODUCT_COPY_FILES += \
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
+    libhardware \
     libhwbinder
 
 # ImsInit hack
