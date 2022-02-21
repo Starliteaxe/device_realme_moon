@@ -736,5 +736,8 @@
 
         <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemAudioIntelligence" translatable="false">com.mediatek.ims</string>
+    
+    <!-- Whether to cancel fingerprint operation if not idle -->
+    <bool name="config_fpCancelIfNotIdle">true</bool>
 
 </resources>
