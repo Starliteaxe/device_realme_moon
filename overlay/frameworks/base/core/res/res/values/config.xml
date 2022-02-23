@@ -728,4 +728,7 @@
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">false</bool>
 
+        <!-- Exempt ImsService from privacy (location) indicators -->
+    <string name="config_systemAudioIntelligence" translatable="false">com.mediatek.ims</string>
+
 </resources>
