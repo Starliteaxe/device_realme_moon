@@ -83,10 +83,6 @@ PRODUCT_PACKAGES += \
     libhardware \
     libhwbinder
 
-# ImsInit hack
-PRODUCT_PACKAGES += \
-    ImsInit
-
 # Init
 PRODUCT_PACKAGES += \
     init.mt6768.rc \
