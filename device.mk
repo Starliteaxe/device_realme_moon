@@ -16,9 +16,6 @@
 
 DEVICE_PATH := device/realme/even
 
-# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/even/even-vendor.mk)
 
@@ -26,10 +23,7 @@ $(call inherit-product, vendor/realme/even/even-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # IMS
-$(call inherit-product, vendor/mediatek-ims/ims-vendor.mk)
-
-# Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+$(call inherit-product, vendor/realme/even-ims/even-ims.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
