@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter RMX2020,$(TARGET_DEVICE)),)
+ifneq ($(filter even,$(TARGET_DEVICE)),)
 $(call add-radio-file,dynamic-remove-oppo)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))

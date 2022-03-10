@@ -1,0 +1,10 @@
+type hal_fingerprint_even, domain;
+typeattribute hal_fingerprint_even data_between_core_and_vendor_violators;
+typeattribute hal_fingerprint_even vendor_executes_system_violators;
+hal_client_domain(hal_fingerprint_even, hal_fingerprint)
+hal_server_domain(hal_fingerprint_even, hal_fingerprint)
+
+type hal_fingerprint_even_exec, system_file_type, exec_type, file_type;
+init_daemon_domain(hal_fingerprint_even)
+
+binder_call(hal_fingerprint_even, hal_fingerprint_even)

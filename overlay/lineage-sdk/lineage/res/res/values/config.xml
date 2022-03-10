@@ -14,7 +14,7 @@
 <resources>
 
     <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
-    <bool name="config_cleanupUnusedFingerprints">false</bool>
+    <bool name="config_cleanupUnusedFingerprints">true</bool>
 
     <!-- Whether to post reset runnable for all clients. Needed for some older
          vendor fingerprint HAL implementations. -->

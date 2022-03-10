@@ -19,13 +19,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device makefile
-$(call inherit-product, device/realme/RMX2020/device.mk)
+$(call inherit-product, device/realme/even/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_RMX2020
-PRODUCT_DEVICE := RMX2020
+PRODUCT_NAME := aosp_even
+PRODUCT_DEVICE := even
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme G70 Series
+PRODUCT_MODEL := Realme C25/C25S
 PRODUCT_MANUFACTURER := realme
 
 TARGET_BOOT_ANIMATION_RES := 720
@@ -33,8 +33,8 @@ TARGET_BOOT_ANIMATION_RES := 720
 # Build info
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=RMX2020 \
-    PRODUCT_NAME=RMX2020 \
+    TARGET_DEVICE=even \
+    PRODUCT_NAME=even \
     PRIVATE_BUILD_DESC="sys_oplus_mssi_64_cn-user-11-RP1A.200720.011-1607914664672-release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
