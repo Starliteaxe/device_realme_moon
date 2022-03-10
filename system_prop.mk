@@ -13,18 +13,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.bluetooth.bluetooth_audio_hal.disabled=true
 
-# Dex2oat
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    dalvik.vm.dex2oat64.enabled=true \
-    dalvik.vm.image-dex2oat-filter=quicken \
-    dalvik.vm.image-dex2oat-threads=8 \
-    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
-    dalvik.vm.dex2oat-filter=quicken \
-    dalvik.vm.dex2oat-threads=8 \
-    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
-    dalvik.vm.boot-dex2oat-threads=8 \
-    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
-
 # Iorap
 PRODUCT_PROPERTY_OVERRIDES += \
    iorapd.perfetto.enable=true \
