@@ -28,7 +28,7 @@ $(call inherit-product, device/realme/even/device.mk)
 PRODUCT_NAME := aosp_even
 PRODUCT_DEVICE := even
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := Realme C25/C25S
+PRODUCT_MODEL := realme Even
 PRODUCT_MANUFACTURER := realme
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
@@ -47,4 +47,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
