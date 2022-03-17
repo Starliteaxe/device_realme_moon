@@ -28,28 +28,32 @@ $(call inherit-product, vendor/realme/even-ims/even-ims.mk)
 # RealmeParts
 $(call inherit-product, packages/apps/RealmeParts/parts.mk)
 
+# API
 PRODUCT_SHIPPING_API_LEVEL := 30
-
-# Dynamic Partition
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
+
+# Dynamic Partition
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    GoogleCameraGo
+    audio.a2dp.default
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/audio_policy_configuration.xml \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_configuration.xml
+
+# Camera
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -98,6 +102,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.even
 
+# MTK IMS Overlays
+PRODUCT_PACKAGES += \
+    mtk-ims \
+    mtk-ims-telephony
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -112,11 +121,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     NotchBarKiller
-
-# MTK IMS Overlays
-PRODUCT_PACKAGES += \
-    mtk-ims \
-    mtk-ims-telephony
 
 # Permissions
 PRODUCT_COPY_FILES += \
