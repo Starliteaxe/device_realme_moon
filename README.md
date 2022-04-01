@@ -1,7 +1,8 @@
-Realme C25/Realme C25S Device Tree - RMX3191/RMX3195
-================================================================
+# Device Tree for Realme C25 and Realme C25s 
 
+The Realme C25 and Realme C25s are budget smartphones from Realme. These are announced and released in March 2021 and June 2021.
 
+## Device Specifications
 Basic   | Spec Sheet
 -------:|:-------------------------
 CPU     | Octa-core (2x2.0 GHz Cortex-A75 & 6x1.7 GHz Cortex-A55)

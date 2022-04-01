@@ -28,7 +28,7 @@ $(call inherit-product, device/realme/even/device.mk)
 PRODUCT_NAME := aosp_even
 PRODUCT_DEVICE := even
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := realme Even
+PRODUCT_MODEL := realme C25 Series
 PRODUCT_MANUFACTURER := realme
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_GAPPS_ARCH := arm64
