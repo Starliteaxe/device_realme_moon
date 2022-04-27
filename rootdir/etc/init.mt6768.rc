@@ -97,7 +97,7 @@ on property:sys.boot_completed=1
     write /sys/block/dm-0/queue/read_ahead_kb 128
     write /sys/block/dm-1/queue/read_ahead_kb 128
 
-service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.sh
+service oppo_fingerprints_sh /odm/bin/sh /odm/bin/init.oppo.fingerprints.sh
     class main
     user root
     oneshot
