@@ -143,7 +143,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/power/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml
 
 # Properties
--include $(DEVICE_PATH)/system_prop.mk
+-include $(DEVICE_PATH)/configs/props/system.prop
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Recovery
