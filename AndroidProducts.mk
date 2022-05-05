@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_even.mk
+    $(LOCAL_DIR)/aosp_moon.mk

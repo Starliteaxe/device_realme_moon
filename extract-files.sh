@@ -18,7 +18,7 @@
 
 set -e
 
-export DEVICE=even
+export DEVICE=moon
 export VENDOR=realme
 
 # Load extract_utils and do some sanity checks

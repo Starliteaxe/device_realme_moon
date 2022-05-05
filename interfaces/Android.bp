@@ -1,4 +1,4 @@
 hidl_package_root {
     name: "vendor.oplus.hardware",
-    path: "device/realme/even/interfaces",
+    path: "device/realme/moon/interfaces",
 }

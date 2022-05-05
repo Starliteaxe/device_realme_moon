@@ -1,0 +1,10 @@
+type hal_fingerprint_moon, domain;
+typeattribute hal_fingerprint_moon data_between_core_and_vendor_violators;
+typeattribute hal_fingerprint_moon vendor_executes_system_violators;
+hal_client_domain(hal_fingerprint_moon, hal_fingerprint)
+hal_server_domain(hal_fingerprint_moon, hal_fingerprint)
+
+type hal_fingerprint_moon_exec, system_file_type, exec_type, file_type;
+init_daemon_domain(hal_fingerprint_moon)
+
+binder_call(hal_fingerprint_moon, hal_fingerprint_moon)

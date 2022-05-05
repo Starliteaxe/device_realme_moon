@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Inherit some common Pixel-Experience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -25,22 +22,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/even/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_even
-PRODUCT_DEVICE := even
+PRODUCT_NAME := aosp_moon
+PRODUCT_DEVICE := moon
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := realme C25 Series
+PRODUCT_MODEL := Realme Moon
 PRODUCT_MANUFACTURER := realme
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Build info
 BUILD_FINGERPRINT := "google/coral/coral:12/SP2A.220405.003/8210211:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=even \
-    PRODUCT_NAME=even \
+    TARGET_DEVICE=moon \
+    PRODUCT_NAME=moon \
     PRIVATE_BUILD_DESC="sys_oplus_mssi_64_cn-user-11-RP1A.200720.011-1607914664672-release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme

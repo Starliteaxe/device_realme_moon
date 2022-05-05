@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/even
+DEVICE_PATH := device/realme/moon
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/realme/even/even-vendor.mk)
+$(call inherit-product, vendor/realme/moon/moon-vendor.mk)
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -60,14 +60,13 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     GoogleCameraGo
-	
+
 # DT2W
 PRODUCT_PACKAGES += \
     DT2W-Service-even
-	
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/dt2w/dt2w_event:$(TARGET_COPY_OUT_VENDOR)/bin/dt2w_event
-
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -78,7 +77,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.even
+    android.hardware.biometrics.fingerprint@2.1-service.moon
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml \
@@ -110,7 +109,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.even
+    android.hardware.light@2.0-service.moon
 
 # MTK IMS Overlays
 PRODUCT_PACKAGES += \

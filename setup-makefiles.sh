@@ -18,7 +18,7 @@
 
 set -e
 
-export DEVICE=even
+export DEVICE=moon
 export VENDOR=realme
 
 INITIAL_COPYRIGHT_YEAR=2020
@@ -40,7 +40,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false
 
 # Copyright headers and guards
-write_headers "even"
+write_headers "moon"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
