@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_moon.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_moon-user \
+    aosp_moon-userdebug \
+    aosp_moon-eng
