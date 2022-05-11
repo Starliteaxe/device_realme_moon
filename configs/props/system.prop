@@ -89,6 +89,9 @@ pm.dexopt.bg-dexopt=everything
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# App
+ro.launcher.blur.appLaunch=0
+
 # Disable iorapd
 ro.iorapd.enable=true
 iorapd.readahead.enable=true
