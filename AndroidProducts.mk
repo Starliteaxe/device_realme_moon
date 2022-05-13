@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cipher_moon.mk
+    $(LOCAL_DIR)/arrow_moon.mk
 
 COMMON_LUNCH_CHOICES := \
-    cipher_moon-user \
-    cipher_moon-userdebug \
-    cipher_moon-eng
+    arrow_moon-user \
+    arrow_moon-userdebug \
+    arrow_moon-eng

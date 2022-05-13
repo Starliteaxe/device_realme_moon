@@ -21,14 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/moon/device.mk)
 # Inherit some rom sruff
-$(call inherit-product, vendor/cipher/config/common.mk)
-
-# Cipher Flags
-CIPHER_GAPPS := true
-CIPHER_MAINTAINER := Daman
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cipher_moon
+PRODUCT_NAME := arrow_moon
 PRODUCT_DEVICE := moon
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme Moon
