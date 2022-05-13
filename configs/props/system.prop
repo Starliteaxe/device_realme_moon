@@ -92,6 +92,9 @@ persist.sys.fuse.passthrough.enable=true
 # App
 ro.launcher.blur.appLaunch=0
 
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
 # Disable iorapd
 ro.iorapd.enable=true
 iorapd.readahead.enable=true
