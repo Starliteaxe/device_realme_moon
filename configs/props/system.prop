@@ -25,6 +25,7 @@ display.use_smooth_motion=1
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.perf.scroll_opt=true
 ro.surface_flinger.supports_background_blur=0
+debug.sf.disable_hwc_vds=1
 # ro.kernel.qemu=1
 # ro.kernel.qemu.gles=0
 
