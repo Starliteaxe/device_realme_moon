@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
     fstab.mt6768 \
     perf_profile.sh
 
+ # Symbols
+PRODUCT_PACKAGES += \
+    libshim_vtservice
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/idc/mtk-kpd.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/mtk-kpd.idc \
