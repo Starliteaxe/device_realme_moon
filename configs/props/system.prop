@@ -27,6 +27,7 @@ ro.perf.scroll_opt=true
 ro.surface_flinger.supports_background_blur=0
 debug.sf.disable_hwc_vds=1
 renderthread.skia.reduceopstasksplitting=true
+debug.hwui.renderer=skiavk
 # ro.kernel.qemu=1
 # ro.kernel.qemu.gles=0
 
