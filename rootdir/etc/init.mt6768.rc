@@ -34,7 +34,7 @@ on early-init
     write /sys/block/mmcblk0/queue/read_ahead_kb 2048
     write /sys/block/mmcblk0/queue/nr_requests 256
     write /sys/block/mmcblk0/queue/iostats 0
-    
+
 on init
     write /proc/bootprof "INIT:init"
     # Support legacy paths
@@ -187,6 +187,19 @@ on post-fs
 
     chown system system /mnt/vendor/protect_s
     chmod 0770 /mnt/vendor/protect_s
+
+    on property:sys.boot_completed=1
+ # write caching
+    # Tell the kernel to use up to 99% of the RAM as cache for writes
+    # and instruct kernel to use up to 50% of RAM before slowing down
+    # the process that's writing.
+    write /proc/sys/vm/dirty_ratio 99
+    write /proc/sys/vm/dirty_background_ratio 50
+
+    # Tell that 10 minutes write delay is ok to even start writing
+    # stuff on the disk (ten minutes = 60000; 1 hour 360000).
+    write /proc/sys/vm/dirty_expire_centisecs 60000
+    write /proc/sys/vm/dirty_writeback_centisecs 60000
 
     # Support A/B feature for EMMC and UFS boot region
     symlink /dev/block/sda /dev/block/mmcblk0boot0
