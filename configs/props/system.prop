@@ -1,4 +1,4 @@
- ro.build.keystore.path=/sdcard/.lii/
+  ro.build.keystore.path=/sdcard/.lii/
 
 #
 # from device/mediatek/system/common/system.prop
@@ -102,10 +102,13 @@ pm.dexopt.bg-dexopt=everything
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
 # App
 ro.launcher.blur.appLaunch=0
 
-# Seamless transfer
+#  Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
 
 # Disable iorapd
