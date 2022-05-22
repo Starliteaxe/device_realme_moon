@@ -773,4 +773,7 @@
  <!-- Whether or not to support RCS User Capability Exchange -->
     <bool name="config_rcs_user_capability_exchange_enabled">false</bool>
 
+<!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
 </resources>
