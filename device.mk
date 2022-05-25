@@ -26,7 +26,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Ims
-$(call inherit-product, vendor/realme/mediatek-ims/ims-vendor.mk)
+$(call inherit-product, vendor/realme/moon-ims/moon-ims.mk)
 
 # RealmeDirac
 $(call inherit-product-if-exists, packages/apps/RealmeDirac/dirac.mk)
