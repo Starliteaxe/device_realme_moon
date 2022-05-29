@@ -173,6 +173,10 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
 
+# Screen Recorder
+PRODUCT_PACKAGES += \
+    ScreenRecorder
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
