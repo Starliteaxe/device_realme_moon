@@ -59,8 +59,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-# Bluetooth
-PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
 	android.hardware.bluetooth@1.0.vendor \
 	android.hardware.bluetooth@1.1 \
@@ -73,6 +71,11 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     GoogleCameraGo
+
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service \
+    android.hardware.configstore@1.1-service
 
 # DT2W
 PRODUCT_PACKAGES += \
