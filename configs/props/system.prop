@@ -28,6 +28,8 @@ ro.surface_flinger.supports_background_blur=0
 debug.sf.disable_hwc_vds=1
 renderthread.skia.reduceopstasksplitting=true
 debug.hwui.renderer=skiavk
+debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 # ro.kernel.qemu=1
 # ro.kernel.qemu.gles=0
 
