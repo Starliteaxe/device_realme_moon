@@ -113,6 +113,11 @@ dalvik.vm.heapminfree=512k
 dalvik.vm.heapstartsize=8m
 pm.dexopt.first-boot=speed
 pm.dexopt.bg-dexopt=everything
+
+# ZRAM
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
     
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
