@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CONTABLE>
+ <CONTABLE>
     <CMD name="PERF_RES_SCHED_BOOST_VALUE_FG" id="0x01400100">
         <Entry path="/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_fg_boost"></Entry>
         <Compare>more</Compare>
@@ -289,6 +289,14 @@
         <MinValue>0</MinValue>
         <DefaultValue>1</DefaultValue>
         <Prefix>enable^</Prefix>
+    </CMD>
+    <CMD name="PERF_RES_GPU_SHED_MODE" id="0x0302c000">
+        <Entry path="/sys/devices/platform/13040000.mali/js_ctx_scheduling_mode"></Entry>
+        <Compare>more</Compare>
+        <MaxValue>1</MaxValue>
+        <MinValue>0</MinValue>
+        <DefaultValue>0</DefaultValue>
+        <Valid>1</Valid>
     </CMD>
 </CONTABLE>
 
