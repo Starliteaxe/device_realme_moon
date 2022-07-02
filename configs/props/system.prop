@@ -128,6 +128,9 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 # App
 ro.launcher.blur.appLaunch=0
 
+# Bluetooth
+persist.bluetooth.bluetooth_audio_hal.disabled=true
+
 #  Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
 
