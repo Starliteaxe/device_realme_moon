@@ -32,7 +32,7 @@ PRODUCT_MANUFACTURER := realme
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Build info
-BUILD_FINGERPRINT := "google/coral/coral:12/SQ3A.220605.009.A1/8643238:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:12/SQ3A.220705.003.A1/8672226:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=moon \
     PRODUCT_NAME=moon \
